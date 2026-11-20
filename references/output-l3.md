@@ -34,14 +34,16 @@
 | 篇 | 图 | 语法 |
 | --- | --- | --- |
 | 00 导读 | 判断分布（可选） | 表格 |
-| 02 时间轴 | 年度条数 | `mermaid xychart-beta` |
-| 03 节律 | 时段分布 | `mermaid xychart-beta` |
-| 04 消费 | 结构占比 | `mermaid pie` |
-| 05 审美 | 偏好分布 | `mermaid pie` 或条形 |
-| 06 职业 | 项目时间线 | `mermaid timeline` |
-| 07 三观 | 张力对照 | `mermaid quadrantChart`（可选） |
-| 08 旅程 | 强度曲线 | `mermaid xychart-beta`（line） |
-| 09 生活 | 关系路径 | `mermaid flowchart` |
+| 02 时间轴 | 年度条数 | ASCII 条 |
+| 03 节律 | 时段分布 | ASCII 条 |
+| 04 消费 | 结构占比 | `mermaid pie` ✅ |
+| 05 审美 | 偏好分布 | `mermaid pie` ✅ |
+| 06 职业 | 项目时间线 | `mermaid timeline`（视渲染器）或表格 |
+| 07 三观 | 张力对照 | 表格（quadrantChart 视渲染器） |
+| 08 旅程 | 强度曲线 | ASCII 条 |
+| 09 生活 | 关系路径 | `mermaid flowchart` ✅ |
+
+> **只用 ✅ 的三种（flowchart / pie / ASCII）**，其余视渲染器，不确定就不画。
 
 **三条纪律**（同 L1/L2）：
 

@@ -66,11 +66,13 @@
 
 | 节 | 图 | 语法 |
 | --- | --- | --- |
-| 节律 | 时段分布 | `mermaid xychart-beta`（bar） |
-| 消费 | 构成比例 | `mermaid pie` |
-| 社交 | 关系维持路径 | `mermaid flowchart` |
-| 旅程 | 阶段与强度 | `mermaid xychart-beta`（line）或 ASCII |
+| 节律 | 时段分布 | ASCII 条（`text` 代码块） |
+| 消费 | 构成比例 | `mermaid pie` ✅ |
+| 社交 | 关系维持路径 | `mermaid flowchart` ✅ |
+| 旅程 | 阶段与强度 | ASCII 条 |
 | 十维 | 强度概览 | 表格 + ASCII 条 |
+
+> `mermaid xychart-beta` GitHub 不支持，不要用。
 
 **纪律**：图下必写一句「这张图说明什么」；分数标注「示意，非测评」。
 

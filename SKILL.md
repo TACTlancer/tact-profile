@@ -143,12 +143,16 @@ description: 建立、更新和审阅个人画像（user profile / persona）。
 
 Markdown 里能用的（GitHub 原生渲染）：
 
-| 类型 | 语法 | 适合 |
-| --- | --- | --- |
-| 流程图 | `mermaid flowchart` | 流水线、关系结构、决策分支 |
-| 饼图 | `mermaid pie` | 构成比例（消费、时间分配） |
-| 柱状/折线 | `mermaid xychart-beta` | 时间分布、强度对比 |
-| 表格 / ASCII 条 | 原生 | 简单对比 |
+| 类型 | 语法 | GitHub | 适合 |
+| --- | --- | --- | --- |
+| 流程图 | `mermaid flowchart` | ✅ 稳 | 流水线、关系结构、决策分支 |
+| 饼图 | `mermaid pie` | ✅ 稳 | 构成比例（消费、时间分配） |
+| 时序图 | `mermaid sequenceDiagram` | ✅ 稳 | 交互流程 |
+| 柱状/折线 | `mermaid xychart-beta` | ❌ **不支持** | 改用 ASCII 条 |
+| 雷达图 | — | ❌ 无 | 改用 ASCII 条或表格 |
+| ASCII 条 | ```text 代码块 | ✅ 永远可用 | 强度对比、时间分布 |
+
+**推荐组合**：`flowchart` + `pie` + ASCII 条。这三样在所有渲染器上都稳。
 
 **三条纪律**：
 
