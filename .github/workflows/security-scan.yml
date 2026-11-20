@@ -1,0 +1,42 @@
+name: security-scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 敏感词扫描
+        run: |
+          set -e
+          PATTERNS='TACTlancer|TACTlck|tactlck|中南大学|信息学院|唐山|成都|长沙|2311770207|2080951940|skey=|p_skey|g_tk|C:\\\\Users'
+          if grep -rInE "$PATTERNS" --include='*.md' --include='*.py' --include='*.json' . \
+             | grep -v '^\./\.github/' ; then
+            echo "::error::发现疑似敏感信息，请检查上面列出的行"
+            exit 1
+          fi
+          echo "OK: 未发现敏感词"
+
+      - name: 检查大文件（>1MB）
+        run: |
+          big=$(find . -type f -not -path './.git/*' -size +1M)
+          if [ -n "$big" ]; then
+            echo "::warning::以下文件超过 1MB："
+            echo "$big"
+          fi
+
+      - name: 检查是否有图片/数据被误提交
+        run: |
+          bad=$(find . -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.webp' -o -iname '*.zip' -o -iname '*.zstd' \) -not -path './.git/*' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::发现媒体/压缩文件，可能误传数据："
+            echo "$bad"
+            exit 1
+          fi
+          echo "OK: 无媒体文件"
