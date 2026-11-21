@@ -54,6 +54,7 @@ platforms → interest-screening → question-bank
 | `sensitive.md` | 亲密关系与性脚本（默认关闭） | 本人主动提出时 |
 | `privacy.md` | 三档披露 + 可识别性检查 | 每次输出前 |
 | `correction.md` | 纠偏协议：事实错 → 重算 + 留痕 + 反查 | 用户纠正任何事实时 |
+| `ai-interaction.md` | 第十一维：用户面对 AI 时的样子（10 个观察维度） | 有 AI 对话记录时 |
 | `output-l1.md` | 1 页卡模板 | L1 |
 | `output-l2.md` | 5–8 页模板 | L2 |
 | `output-l3.md` | 分篇模板 + 写作顺序 | L3 |
