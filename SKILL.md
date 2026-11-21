@@ -118,6 +118,8 @@ description: 建立、更新和审阅个人画像（user profile / persona）。
 
 问题池、好问题标准、频率见 `references/interview-loop.md`。
 
+**skill 自身更新后，偶尔问一句「要同步到 GitHub 吗」**——不是每次改完都问，攒到有意义的改动（新增维度、改了规则、修了 bug）再问一次。
+
 ## 更新已有画像
 
 1. 读旧画像，抽出所有结论及其证据级别。
