@@ -34,6 +34,8 @@ platforms → interest-screening → question-bank
 | 亲密 vs 社交 | `sensitive`（亲密关系模式） | `dimensions` 第 6 维（社交结构） | 亲密是子集，单独处理因敏感 |
 | 意识形态 vs 三观 | 都只记原话 | — | 不推断、不打分、不评价 |
 | 筛选 vs 题本 | `interest-screening`（定域） | `question-bank`（提问） | 先筛后问，不筛不问 |
+| 题库 vs 循环 | `question-bank`（**问什么**） | `interview-loop`（**怎么问、何时问**） | 一个给题目，一个给节奏 |
+| 十维 vs 垂类 | `dimensions`（横切：每个维度怎么推） | `domains`（纵切：每个爱好怎么深挖） | 正交，都要过 `inference-rules` |
 
 ---
 
@@ -43,7 +45,8 @@ platforms → interest-screening → question-bank
 | --- | --- | --- |
 | `platforms.md` | 13 类输入源：拿法、偏差、能推什么 | 开工第一步 |
 | `interest-screening.md` | 13 题雷达，定哪些域要做 | 定级后立刻 |
-| `question-bank.md` | 20 问 / 100 问 / 平台特化问法 | 没数据时 |
+| `question-bank.md` | 20 问 / 100 问 / 平台特化问法（**题目本身**） | 没数据时 |
+| `interview-loop.md` | 访谈循环：两阶段模式 + 问题类型 + 频次（**怎么问、何时问**） | 每次交付后 |
 | `dimensions.md` | 十维定义 + 能推/不能推 + 交叉校验 | 分维分析时 |
 | `inference-rules.md` | **六条推断规则（单一源）**：单点疑似 / 三点同向 / 行为优先 / 先找反例 / 不跨层 / 不用评价词 | **每次下结论前** |
 | `domains.md` | 13 个垂类的轴/模式/边界 + 跨垂类交叉 | 做子画像卡时 |
