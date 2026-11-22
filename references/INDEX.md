@@ -45,10 +45,11 @@ platforms → interest-screening → question-bank
 | `interest-screening.md` | 13 题雷达，定哪些域要做 | 定级后立刻 |
 | `question-bank.md` | 20 问 / 100 问 / 平台特化问法 | 没数据时 |
 | `dimensions.md` | 十维定义 + 能推/不能推 + 交叉校验 | 分维分析时 |
+| `inference-rules.md` | **六条推断规则（单一源）**：单点疑似 / 三点同向 / 行为优先 / 先找反例 / 不跨层 / 不用评价词 | **每次下结论前** |
 | `domains.md` | 13 个垂类的轴/模式/边界 + 跨垂类交叉 | 做子画像卡时 |
 | `consumption.md` | 消费品类矩阵 + 5 种分析法 | 有钱数据时 |
 | `lifestyle.md` | 出行/环保/居住/物品 → 可扩展维度 | 有行为数据时 |
-| `worldview.md` | 三观四层 + 宗教 + 弱信号拼图 | 写价值一节时 |
+| `worldview.md` | 三观四层 + 宗教 + 三观特有的拼图补充 | 写价值一节时 |
 | `metaphysics.md` | 星座/紫微/周易：只进附录 | 有玄学材料时 |
 | `life-events.md` | 健康与重大事件：写影响不写病历 | 有时间轴的断裂时 |
 | `sensitive.md` | 亲密关系与性脚本（默认关闭） | 本人主动提出时 |
