@@ -44,6 +44,10 @@ description: 建立、更新和审阅个人画像（user profile / persona）。
 
 每维的「能推断 / 不能推断」见 `references/dimensions.md`。
 
+**各维度的细化文件**：消费 → `consumption.md`；出行/环保/居住/物品 → `lifestyle.md`；三观与宗教 → `worldview.md`；健康与重大事件 → `life-events.md`；亲密（默认关）→ `sensitive.md`。
+
+**下结论前必读**：`references/inference-rules.md`——六条规则（单点疑似 / 三点同向 / 行为优先 / 先找反例 / 不跨层 / 不用评价词）。**所有分析模块共用这一份，不要另写。**
+
 **第十一维（可选）：用户面对 AI 时的样子**——有 AI 对话记录时加上，10 个观察维度见 `references/ai-interaction.md`。对话记录是最干净的行为日志（无社交表演），但只手记「怎么说话」，不记「说了什么」。
 
 ## 垂类子画像（按爱好深入）
